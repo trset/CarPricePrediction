@@ -1,0 +1,118 @@
+/* Main Background */
+body {
+    background-color: #121212; /* Darker background for improved contrast */
+    color: #e0e0e0; /* Light gray text for better readability */
+    font-family: "Roboto", sans-serif;
+}
+
+/* Main Container Styling */
+.main-container {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e; /* Slightly lighter dark for card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+/* Card Header Styling */
+.card-header {
+    background-color: #2b2b2b; /* Darker background for header */
+    color: #ffffff; /* White text for header */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Label and Input Styling */
+.form-label {
+    color: #b0b0b0; /* Softer gray color for label text */
+    margin-bottom: 5px;
+}
+
+.form-control {
+    background-color: #252525; /* Very dark background for input fields */
+    color: #e0e0e0; /* White text inside inputs for better readability */
+    border: 1px solid #444; /* Subtle border for input fields */
+    border-radius: 4px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ffb84d; /* Gold border on focus */
+    box-shadow: 0 0 8px rgba(255, 184, 77, 0.7); /* Soft glow when input is focused */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #444; /* Darker button background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    box-shadow: 0 4px 8px rgba(255, 184, 77, 0.5); /* Glow effect on hover */
+}
+
+/* Prediction Text Styling */
+.prediction-text {
+    color: #d0d0d0; /* Light gray color for prediction text */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Prediction Value Styling */
+.prediction-text span {
+    color: #ffb84d; /* Soft gold color for the prediction value */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.prediction-text span:hover {
+    color: #f7b64b; /* Slightly lighter on hover */
+    text-shadow: 0 0 10px rgba(255, 184, 77, 0.8); /* Glow effect on hover */
+}
+
+/* Hover Effects for Form Fields */
+.form-control:hover {
+    border-color: #666; /* Lighter border on hover */
+}
+
+/* Add Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+
+    .btn-primary {
+        padding: 8px 12px;
+    }
+
+    .prediction-text {
+        font-size: 1em;
+    }
+}
